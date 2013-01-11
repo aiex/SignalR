@@ -328,7 +328,7 @@ namespace Microsoft.AspNet.SignalR
                 DisconnectTimeout = _configurationManager.DisconnectTimeout.TotalSeconds,
                 TryWebSockets = _transportManager.SupportsTransport(WebSocketsTransportName) && context.SupportsWebSockets(),
                 WebSocketServerUrl = context.WebSocketServerUrl(),
-                ProtocolVersion = "1.1"
+                ProtocolVersion = "1.2"
             };
 
             if (!String.IsNullOrEmpty(context.Request.QueryString["callback"]))

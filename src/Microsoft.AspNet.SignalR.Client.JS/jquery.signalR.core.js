@@ -428,7 +428,7 @@
                         keepAliveData.activated = false;
                     }
 
-                    if (!res.ProtocolVersion || res.ProtocolVersion !== "1.1") {
+                    if (!res.ProtocolVersion || res.ProtocolVersion !== "1.2") {
                         $(connection).triggerHandler(events.onError, "SignalR: Incompatible protocol version.");
                         deferred.reject("SignalR: Incompatible protocol version.");
                         return;

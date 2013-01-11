@@ -344,7 +344,7 @@ namespace Microsoft.AspNet.SignalR.Client
             Version version;
             if (String.IsNullOrEmpty(versionString) ||
                 !TryParseVersion(versionString, out version) ||
-                !(version.Major == 1 && version.Minor == 1))
+                !(version.Major == 1 && version.Minor == 2))
             {
                 throw new InvalidOperationException(String.Format(CultureInfo.CurrentCulture, Resources.Error_IncompatibleProtocolVersion));
             }
