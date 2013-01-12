@@ -8,6 +8,12 @@
         /// </summary>
         public bool EnableJavaScriptProxies { get; set; }
 
+        /// <summary>
+        /// Determines whether detailed exceptions thrown in Hub methods get reported back the invoking client.
+        /// Defaults to false.
+        /// </summary>
+        public bool EnableDetailedHubErrors { get; set; }
+
         public HubConfiguration()
         {
             EnableJavaScriptProxies = true;

@@ -30,7 +30,7 @@ namespace Owin
                 throw new ArgumentNullException("configuration");
             }
 
-            return builder.UseType<HubDispatcherHandler>(path, configuration.EnableJavaScriptProxies, configuration.Resolver);
+            return builder.UseType<HubDispatcherHandler>(path, configuration, configuration.Resolver);
         }
 
         [SuppressMessage("Microsoft.Design", "CA1004:GenericMethodsShouldProvideTypeParameter", Justification = "The type parameter is syntactic sugar")]
